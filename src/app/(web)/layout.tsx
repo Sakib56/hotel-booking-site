@@ -34,7 +34,7 @@ export default function RootLayout({
           crossOrigin='anonymous'
         />
       </head>
-      <body className={poppins.className}>
+      <body className={`${poppins.className} px-10`}>
         <NextAuthProvider>
           <ThemeProvider>
             <Toast />

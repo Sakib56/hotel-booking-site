@@ -67,11 +67,14 @@ const Rooms = () => {
         setSearchQuery={setSearchQuery}
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-20">
-        {filteredRooms.map(room => (
-          <RoomCard key={room._id} room={room} />
-        ))}
+      <div className="w-full max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 mt-20">
+          {filteredRooms.map(room => (
+            <RoomCard key={room._id} room={room} />
+          ))}
+        </div>
       </div>
+
 
     </div>
   );

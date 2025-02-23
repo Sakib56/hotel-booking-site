@@ -5,7 +5,7 @@ import { BiMessageDetail } from 'react-icons/bi';
 const Footer = () => {
   return (
     <footer className='mt-16'>
-      <div className='container mx-auto px-4'>
+      <div className='container mx-auto px-20'>
         <Link href='/' className='font-black text-tertiary-dark'>
           StayGo
         </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='bg-tertiary-light h-10 md:h-[70px] mt-16 w-full bottom-0 left-0' />
+      <div className='bg-tertiary-light h-10 md:h-[70px] mt-5 w-full bottom-0 left-0' />
     </footer>
   );
 };
