@@ -13,31 +13,32 @@ const ClientComponent: FC<Props> = props => {
   const { heading1, section2 } = props;
 
   return (
-    <section className='flex px-4 items-center gap-12 container mx-auto justify-between'>
-      <div className='py-10 h-full w-1/2'> {/* Adjust width as needed */}
+    <section className="flex flex-col md:flex-row px-4 items-center gap-6 md:gap-12 container mx-auto justify-between">
+      {/* Left Section */}
+      <div className="md:py-10 w-full md:w-1/2 text-center md:text-left">
         {heading1}
 
-        <div className='flex justify-between mt-20'>
-          <div className='flex gap-3 flex-col items-center justify-center'>
-            <p className='text-xs lg:text-xl text-center'>Basic Room</p>
+        <div className="flex flex-wrap justify-center md:justify-between mt-10 gap-6">
+          <div className="flex flex-col items-center">
+            <p className="text-sm md:text-xl text-center">Basic Room</p>
             <CountUpNumber duration={5000} endValue={50} />
           </div>
-          <div className='flex gap-3 flex-col items-center justify-center'>
-            <p className='text-xs lg:text-xl text-center'>Luxury Room</p>
+          <div className="flex flex-col items-center">
+            <p className="text-sm md:text-xl text-center">Luxury Room</p>
             <CountUpNumber duration={5000} endValue={120} />
           </div>
-          <div className='flex gap-3 flex-col items-center justify-center'>
-            <p className='text-xs lg:text-xl text-center'>Suite</p>
+          <div className="flex flex-col items-center">
+            <p className="text-sm md:text-xl text-center">Suite</p>
             <CountUpNumber duration={5000} endValue={60} />
           </div>
         </div>
       </div>
 
-      <div className='w-1/2 flex justify-end'> {/* Adjust width and alignment */}
+      {/* Right Section */}
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end">
         {section2}
       </div>
     </section>
-
   );
 };
 
